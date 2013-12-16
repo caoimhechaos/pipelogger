@@ -1,0 +1,17 @@
+Source: pipelogger
+Maintainer: Caoimhe Chaos <caoimhechaos@protonmail.com>
+Section: admin
+Priority: optional
+Build-Depends: python-setuptools (>= 0.6b3), python (>= 2.6.6-3),
+ debhelper (>= 9), dh-python
+Standards-Version: 3.9.4
+Vcs-Git: https://github.com/caoimhechaos/pipelogger.git
+Vcs-Browser: https://github.com/caoimhechaos/pipelogger/
+
+Package: pipelogger
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}, python (>= 2.7)
+Description: Python program to read data from a pipe and write to syslog
+ Python program to read data from a pipe and write it to syslog. It can be used
+ for writing to syslog from programs which have only support for log files,
+ which can be useful on machines with no writable storage.
